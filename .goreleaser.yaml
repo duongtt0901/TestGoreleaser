@@ -22,6 +22,8 @@ builds:
       - windows
     goarch:
       - amd64
+    ldflags:
+      - -X github.com/duongtt0901/testgoreleaser/build.Version={{.Version}}
 
 archives:
   - format: tar.gz
